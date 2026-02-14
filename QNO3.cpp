@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+	int num;
+	int sum,six,fith,four,three,two,one;
+	printf("enter the number of 6 digits\n");
+	scanf("%d",&num);
+	six=(num%1000)%10;
+	fith=(num/10)%10;
+	four=(num/100)%10;
+	three=(num/1000)%10;
+	two=(num/10000)%10;
+	one=(num/10000)/10;
+	sum=six+fith+four+three+two+one;
+	printf("%d",sum);
+	return 0;
+}
